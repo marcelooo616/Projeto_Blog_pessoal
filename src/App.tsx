@@ -1,18 +1,10 @@
 import React from 'react';
+import Home from './paginas/Home';
 
 
 function App() {
   return (
-    <div >
-        <ul>
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <li>
-                <a href="contato.html">Contato</a>
-            </li>
-        </ul>
-    </div>
+    <Home/>
   );
 }
 

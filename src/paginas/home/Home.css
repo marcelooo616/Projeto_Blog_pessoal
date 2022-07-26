@@ -1,0 +1,18 @@
+.containerHome{
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: row;
+    
+    
+}
+.containerHome h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.containerHome img{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
