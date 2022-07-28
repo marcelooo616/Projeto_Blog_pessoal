@@ -1,37 +1,37 @@
 import React from "react";
-import {Box,  Button,  Paper } from "@material-ui/core";
+import { Grid, Box, Typography, Button, Paper } from "@material-ui/core";
 import "./home/Home.css";
 
 
-function Home(){
-    return(
-        /** '  <></> ' - Caminho abreviado fragment que o react utiliza para poder retornar um ou mais elementos
+function Home() {
+    return (
+
+
+
         <>
 
-        Exemplo de grid 
-            <Grid container spacing={2}>
+            <div className="container"   >
+                <div className="home">
+                    <div className="texto"  >
+                        <h3 >Seja bem vindo(a)!</h3>
+                        <h5>expresse aqui os seus pensamentos e opiniões!</h5>
+                    </div>
+                    <button>
+                        <span className="shadow"></span>
+                        <span  className="edge"></span>
+                        <span  className="front text"> Ver Postagens
+                        </span>
+                    </button>
+                </div>
+                <div className="img" >
+                    <img src="https://i.imgur.com/GxMP4HH.png" alt="" width="500px" height="500px" />
 
-                     <Grid item xs={12} sm={8}>
-                        <Paper style={{ height: "100vh", background: "red"}}/>
-                     </Grid>
+                </div>
 
-                <Grid item container direction="column" xs ={12} sm={4} spacing={2}>
-                         <Grid item>
-                            <Paper style={{ height: "49vh", background: "orange"}} />
-                         </Grid>
-                         <Grid item>
-                            <Paper style={{ height: "49vh", background: "green"}}/>
-                         </Grid>
-
-                </Grid>
-           </Grid>
+            </div>
         </>
-        */
-       <>
 
-           <h1>Home</h1>
-       
-       </>
+
     )
 }
 

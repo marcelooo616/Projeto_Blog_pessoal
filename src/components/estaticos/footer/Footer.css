@@ -1,0 +1,27 @@
+.bg-footer{
+    background-color: black;
+    
+}
+
+.containerImg {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.containerFooter{
+    
+    border-radius: 30px;
+}
+
+.boxFooter{
+    
+    border-radius: 30px;
+}
+.rede{
+    background-color: rgb(30, 30, 30);
+}
+.copy{
+    background-color: rgb(16, 15, 15);
+}
+

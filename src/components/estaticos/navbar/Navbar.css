@@ -1,5 +1,66 @@
-.bar  {
-    display: flex;
-    align-items: flex-start;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+
+.containerNav {
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 30px 30px;
+    margin-inline-start: 17vw;
+    font-size: small;
+    
+    
+
+ 
 }
+
+.containerBlog{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    border-radius: 0px 0px 30px 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 180px;
+    text-align: center;
+    font-size:15px;
+    
+    
+    
+    
+}
+
+
+.Box h2{
+    padding: 1vw;
+    align-items: flex-start;
+  
+}
+.containerNav h2{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    
+    
+    
+}
+
+
+.Box :hover{
+    background-color: #cda7f076;
+    border-radius: 20px;
+    transition: background .6s;
+    transition-property: inherit;
+}
+
+.header {
+    
+    background-color:  #f1f1ed;;
+   
+    
+
+} 
+
+ 
