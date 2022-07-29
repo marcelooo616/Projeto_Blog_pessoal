@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.containerLogin{
+    display: flex;
+    justify-content: center;   
+    background-color: aqua;
+    
+    
+    
+    
+    
+}
+.containerLogin h2{
+    
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+   
+    
+
+    
+}
+.cardLogin {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+    
+    
+}
+
+
+.senha{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+
+.paddingX{
+    padding: 20px;
+}
+.enter{
+    padding: 20px;
+}
