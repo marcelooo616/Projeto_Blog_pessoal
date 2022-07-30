@@ -7,7 +7,7 @@
 .containerLogin{
     display: flex;
     justify-content: center;   
-    background-color: aqua;
+    
     
     
     
@@ -20,14 +20,19 @@
     font-family: 'Quicksand', sans-serif;
     text-align: center;
    
+    color: antiquewhite;
+   
     
 
     
 }
 .cardLogin {
+    
     display: flex;
     justify-content: center;
     width: 100%;
+    color: aliceblue;
+   
     
     
     
@@ -39,14 +44,36 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    color: aliceblue;
     
     
 }
 
 
 .paddingX{
+    display: flex;
     padding: 20px;
+    justify-content: center;
+    
 }
-.enter{
+.form{
+    
+    margin: 75px;
     padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px 30px 30px 30px;
+    color: antiquewhite;
+    
+    
+    
 }
+.div{
+   background-color: rgb(252, 255, 255);
+   font-style: italic;
+   padding: 30px;
+   
+}
+.div2{
+    margin-bottom: 20px;
+}
+

@@ -9,17 +9,23 @@ function Login(){
             <Grid className=" containerLogin" direction='row'>
                 <Grid xs = {6}>
                     <div className='cardLogin'  >
-                        <form className='enter'>
+                        <form className='form'>
 
                             <h2>Enter</h2>
-                            <TextField className='login' id='usuario' label="usuario" variant='outlined' name='usuairo' fullWidth />
+                            <div className='div'>
+                                <div className='div2'>
+                            <TextField className='login' id='usuario' label="usuario" variant='outlined' name='usuairo'  fullWidth />
+                               </div>
                             <TextField className='senha' id='senha' label="senha" variant='outlined' name='senha' type="password" fullWidth />
-                             
+                            </div>
                              <div className='paddingX' >
                                 <Link to='/home' className='text-decorator-none'>
-                                    <Button>
-                                        Logar
-                                    </Button>
+                                <button>
+                                    <span className="shadow"></span>
+                                    <span  className="edge"></span>
+                                    <span  className="front text"> Logar
+                                     </span>
+                                </button>
                                 </Link>
                              </div>
                         </form>

@@ -22,27 +22,27 @@ function Navbar() {
 
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2>
-                               home 
+                                 <a href='http://localhost:3000/home'>home</a>
                             </h2>
                         </div>
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2>
-                                postagens
+                               <a href=''>postagens</a> 
                             </h2>
                         </div>
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2>
-                                temas
+                                 <a href=''>temas</a> 
                             </h2>
                         </div>
                         <div className="Box" style={{ cursor: "pointer" }}>
                             <h2>
-                                cadastrar tema
+                                 <a href=''>cadastrar tema</a> 
                             </h2>
                         </div>
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2 >
-                                logout
+                                    <a href=''>logout</a>     
                             </h2>
                         </div>
 
