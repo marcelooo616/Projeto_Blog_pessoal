@@ -42,7 +42,7 @@ function Navbar() {
                         </div>
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2 >
-                                    <a href=''>logout</a>     
+                                    <a href='http://localhost:3000/login'>login</a>     
                             </h2>
                         </div>
 

@@ -6,11 +6,12 @@ import "../login/Login.css";
 function Login(){
     return (
         <>
-            <Grid className=" containerLogin" direction='row'>
+            <Grid className=" containerLogin" >
                 <Grid xs = {6}>
                     <div className='cardLogin'  >
+                    <div className='box'>
                         <form className='form'>
-
+                        
                             <h2>Enter</h2>
                             <div className='div'>
                                 <div className='div2'>
@@ -28,13 +29,18 @@ function Login(){
                                 </button>
                                 </Link>
                              </div>
+                             
                         </form>
-                    </div>
+                        </div>
+                        </div>
+                        
+                    
+                   
                 </Grid>
 
-                <div>
-
-                </div>
+                <Grid xs = {6}>
+                    <img src='https://i.imgur.com/qtd3a9w.png'  width="500px" height="450px"/>
+                </Grid>
             </Grid>
         </>
     )

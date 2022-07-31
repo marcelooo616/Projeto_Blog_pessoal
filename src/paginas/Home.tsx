@@ -16,7 +16,7 @@ function Home() {
                         <h3 >Seja bem vindo(a)!</h3>
                         <h5>expresse aqui os seus pensamentos e opiniões!</h5>
                     </div>
-                    <button>
+                    <button className="button">
                         <span className="shadow"></span>
                         <span  className="edge"></span>
                         <span  className="front text"> Ver Postagens

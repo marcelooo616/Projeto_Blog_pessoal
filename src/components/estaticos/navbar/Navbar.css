@@ -6,21 +6,23 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 1vw;
-    align-items:flex-end;
+    padding: 2vw;
+    align-items: flex-end;
     flex-wrap: wrap;
     border-radius: 0px 0px 30px 30px;
-    margin-inline-start: 17vw;
+    margin-inline-start: 10vw;
     font-size: small;
-    
-    
-    
-    
 
- 
+
+
+
+
+
+
+
 }
 
-.containerBlog{
+.containerBlog {
     display: flex;
     justify-content: space-between;
     color: black;
@@ -28,55 +30,57 @@
     font-family: 'Montserrat Alternates', sans-serif;
     width: 180px;
     text-align: center;
-    font-size:15px;
-    
-    
-    
-    
-    
+    font-size: 15px;
+
+
+
+
+
 }
 
-.containerNav h2{
+.containerNav h2 {
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
-    
-    
-    
+
+
+
 }
- .Box a{
+
+.Box a {
     color: white;
-    text-decoration: none;   
+    text-decoration: none;
     border-radius: 0px 0px 30px 30px;
     transition: background .6s;
     transition-property: inherit;
     padding: 1vw;
-    
-    
-    
+
+
+
 }
 
 
-.Box h2{
-    
+.Box h2 {
+
     align-items: flex-start;
-    
+
 }
 
 
 
-.Box a:hover{
+.Box a:hover {
     background-color: #cda7f076;
     border-radius: 20px;
-    
-    
+
+
 }
 
 .header {
-    
-    background-color:  #f1f1ed;;
-   
-    
 
-} 
+    background-color: #f1f1ed;
+    -webkit-box-shadow: 3px 3px 20.5px 3px #ddd;
+    -moz-box-shadow: 3px 3px 20.5px 3px #ddd;
+    box-shadow: 3px 3px 20.5px 3px #ddd;
 
- 
+
+
+}

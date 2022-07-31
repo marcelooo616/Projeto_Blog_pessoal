@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 .container{
     display: flex;
     flex-direction: row;
-    background-color:#f1f1ed;
+    background-color:#ecece7;
+    width: 100vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    
     
 
 }
@@ -49,6 +60,8 @@ h5{
     justify-content: center;
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
+    margin-top: 50px;
+    
     
     
 }
@@ -100,7 +113,7 @@ button {
        rgb(20, 20, 20) 0%,
        rgb(58, 57, 57) 8%,
        rgb(53, 53, 53) 92%,
-       hsl(340deg 100% 16%) 100%
+       rgb(11, 11, 11) 100%
      );
    }
    
