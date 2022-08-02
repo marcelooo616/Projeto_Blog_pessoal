@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box, Typography, Button, Paper } from "@material-ui/core";
-import "./home/Home.css";
+import "./Home.css";
 
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
                         <h5>expresse aqui os seus pensamentos e opiniões!</h5>
                     </div>
                     <button className="button">
-                        <span className="shadow"></span>
+                        <span  className="shadow"></span>
                         <span  className="edge"></span>
                         <span  className="front text"> Ver Postagens
                         </span>

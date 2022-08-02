@@ -1,0 +1,56 @@
+
+
+textarea{
+    width: 100%;
+    padding-bottom:100px;
+}
+
+.formContato{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    margin-top: 140px;
+    
+
+}
+.textfield{
+    padding: 10px;
+}
+.textarea{
+    padding: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 30px 30px 30px;
+    width: 350px;
+    border-style: hidden;
+    
+}
+
+.contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  
+
+    
+    
+}
+.containerContato{
+    align-items: center;
+    
+}
+p{
+font-size: 15px;
+}
+
+
+
+
+

@@ -1,80 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-
-*{ margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+.imagem{
+    background-image: url(http://i.imgur.com/d5bMdDJ.jpg);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    background-color:#ecece7;
-    width: 100vw;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-    
-    
+.form2 {
 
+    margin: 75px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 30px 30px 30px;
+    color: antiquewhite;
+    -webkit-box-shadow: 3px 3px 20.5px 3px #ddd;
+    -moz-box-shadow: 3px 3px 20.5px 3px #ddd;
+    box-shadow: 3px 3px 20.5px 3px #ddd;
+}
+
+.form2 h2{
+    color:black;
+    text-align: center;
+}
+.nome{
+    
+    margin-bottom: 20px;  
+}
+.usuario{
+    margin-bottom: 10px;  
+}
+.senha{
+    margin-bottom: 10px;  
+}
+.nome{
+    margin-bottom: 10px;  
 }
 
 
-img{
-    display: flex;
-    width: auto;
-    
-}
-
-.home{
+.buttontContainer{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-h1{
-   color: #f1f1ed;
-   font-size: 10px;
-   font-family: 'Quicksand', sans-serif;;
-}
+   
 
-h3{
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    font-family:'Neucha', cursive;
-    text-align: center;
-}
-
-h5{
-    justify-content: center;
-    font-size: 25px;
-    font-family:'Neucha', cursive;
-    text-align: center;
-
-}
-.button{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    margin-top: 50px;
-    
     
     
 }
-
-
-
-.containerNav{
-    width: 60vw;
+.buttonCancelar{
+    margin-bottom: 15px;
     
 }
 
 
 button {
+   
+    
     position: relative;
     border: none;
     background: transparent;
@@ -163,7 +146,3 @@ button {
    button:focus:not(:focus-visible) {
     outline: none;
    }
- 
-
-
-

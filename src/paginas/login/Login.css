@@ -130,3 +130,35 @@
 
 
 }
+
+.cadastro{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: smaller;
+    margin: 10px;
+    
+    
+    
+    
+}
+
+.cadastro h1{
+    color: black;
+    font-size: medium;
+    font-style: oblique;
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.cadastro h2{
+    font-size: 12px;
+    padding: 5px;
+    font-weight: bold;
+    
+
+   
+}
+    
