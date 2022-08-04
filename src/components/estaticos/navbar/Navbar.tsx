@@ -27,12 +27,12 @@ function Navbar() {
                         </div>
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2>
-                               <a href=''>postagens</a> 
+                               <a href='http://localhost:3000/post'>postagens</a> 
                             </h2>
                         </div>
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2>
-                                 <a href=''>temas</a> 
+                                 <a href='http://localhost:3000/temas'>temas</a> 
                             </h2>
                         </div>
                         <div className="Box" style={{ cursor: "pointer" }}>

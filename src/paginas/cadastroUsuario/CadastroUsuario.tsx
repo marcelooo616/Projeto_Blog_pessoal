@@ -14,7 +14,8 @@ function CadastroUsuario() {
             id: 0,
             nome: '',
             usuario: '',
-            senha: ''
+            senha: '',
+            foto:''
         })
 
     const [userResult, setUserResult] = useState<User>(
@@ -22,12 +23,13 @@ function CadastroUsuario() {
             id: 0,
             nome: '',
             usuario: '',
-            senha: ''
+            senha: '',
+            foto:''
         })
 
     useEffect(() => {
-        if (userResult.id !== 0) {
-            navigate("/login")
+        if (userResult.id != 0) {
+            navigate('/login')
         }
     }, [userResult])
 
@@ -48,6 +50,7 @@ function CadastroUsuario() {
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
         if (confirmarSenha == user.senha) {
+            console.log(user)
             cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
             alert('Usuario cadastrado com sucesso')
         } else {
@@ -60,9 +63,9 @@ function CadastroUsuario() {
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center">
+            <Grid container direction="row" justifyContent="center">
                 <Grid item xs={6} className="imagem"></Grid>
-                <Grid item xs={6} justifyContent="center" alignItems="center">
+                <Grid container item xs={6} justifyContent="center" >
 
 
                     <div>
