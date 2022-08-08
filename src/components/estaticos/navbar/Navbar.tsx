@@ -1,7 +1,19 @@
 import React from 'react';
 import "../navbar/Navbar.css";
-import { Box, Paper, Toolbar, Typography, AppBar } from "@material-ui/core";
+import { Box, Paper, Toolbar, Typography, AppBar } from "@mui/material";
+import { Link } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom'
+import useLocalStorage from 'react-use-localstorage';
 function Navbar() {
+
+    const [token, setToken] = useLocalStorage('token');
+    let navigate = useNavigate();
+    
+    function goLogout(){
+        setToken('')
+        alert("Usuário deslogado")
+       navigate('/login')
+    }
 
 
     return (
@@ -10,7 +22,7 @@ function Navbar() {
                 <Toolbar className='header' variant="dense">
                     <div className="containerBlog">
                         <div className="Box"  style={{ cursor: "pointer" }}>
-                            <h2>
+                            <h2 className='tela'> 
                                Blog Pessoal
                             </h2>
                             
@@ -22,29 +34,31 @@ function Navbar() {
 
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2>
-                                 <a href='http://localhost:3000/home'>home</a>
+                                 <a href='/home'>home</a>
                             </h2>
                         </div>
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2>
-                               <a href='http://localhost:3000/post'>postagens</a> 
+                               <a href='/post'>postagens</a> 
                             </h2>
                         </div>
                         <div className="Box"  style={{ cursor: "pointer" }}>
                             <h2>
-                                 <a href='http://localhost:3000/temas'>temas</a> 
+                                 <a href='/temas'>temas</a> 
                             </h2>
                         </div>
                         <div className="Box" style={{ cursor: "pointer" }}>
                             <h2>
-                                 <a href=''>cadastrar tema</a> 
+                                 <a href='/formularioTema'>cadastrar tema</a> 
                             </h2>
                         </div>
-                        <div className="Box"  style={{ cursor: "pointer" }}>
+                        
+                        <div className="Box"  style={{ cursor: "pointer" }}  onClick={goLogout}>
                             <h2 >
-                                    <a href='http://localhost:3000/login'>login</a>     
+                                    <a href=''>logout</a>     
                             </h2>
                         </div>
+                       
 
                     </div>
 

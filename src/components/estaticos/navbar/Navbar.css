@@ -84,3 +84,20 @@
 
 
 }
+
+@keyframes anim1{
+    from{
+       color: rgb(205, 200, 200);      
+    }
+    to{
+        color: rgb(0, 0, 0);
+    }
+}
+
+ .tela{
+    
+    
+    animation-name: anim1;
+    animation-duration: 3s;
+
+}

@@ -1,10 +1,25 @@
-import React from "react";
-import { Grid, Box, Typography, Button, Paper } from "@material-ui/core";
+import React, { useEffect } from 'react';
+import { Grid, Box, Typography, Button, Paper } from "@mui/material";
 import "./Home.css";
 import TabPostagem from "../../components/postagem/tabpostagem/TabPostagem";
+import { useNavigate } from 'react-router';
+import ModalPostagem from '../../components/postagem/modalPostagem/ModalPostagem';
+import useLocalStorage from 'react-use-localstorage';
 
 
 function Home() {
+
+    let navigate = useNavigate();
+    const [token, setToken] = useLocalStorage('token');
+    
+    useEffect(() => {
+      if (token == "") {
+          alert("Você precisa estar logado")
+          navigate("/login")
+  
+      }
+  }, [token])
+
     return (
 
 
@@ -17,6 +32,10 @@ function Home() {
                         <h3 >Seja bem vindo(a)!</h3>
                         <h5>expresse aqui os seus pensamentos e opiniões!</h5>
                     </div>
+
+                    <Box marginRight={1}>
+                            <ModalPostagem />
+                        </Box>
                     <button className="button">
                         <span  className="shadow"></span>
                         <span  className="edge"></span>
