@@ -13,11 +13,18 @@
     margin-inline-start: 10vw;
     font-size: small;
 
+}
 
-
-
-
-
+.containerNavLogin {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;  
+    align-items: flex-end;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 30px 30px;
+    margin-inline-start: 50vw;
+    font-size: small;
 
 
 }
@@ -31,11 +38,17 @@
     width: 180px;
     text-align: center;
     font-size: 15px;
+}
 
-
-
-
-
+.containerBlogLogin {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    border-radius: 0px 0px 30px 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 180px;
+    text-align: center;
+    font-size: 15px;
 }
 
 .containerNav h2 {
@@ -44,6 +57,11 @@
 
 
 
+}
+
+.containerNavLogin h2 {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .Box a {
@@ -75,6 +93,14 @@
 }
 
 .header {
+
+    background-color: #f1f1ed;
+    
+
+
+
+}
+.headerLogin {
 
     background-color: #f1f1ed;
     -webkit-box-shadow: 3px 3px 20.5px 3px #ddd;

@@ -4,13 +4,17 @@ import "./Home.css";
 import TabPostagem from "../../components/postagem/tabpostagem/TabPostagem";
 import { useNavigate } from 'react-router';
 import ModalPostagem from '../../components/postagem/modalPostagem/ModalPostagem';
-import useLocalStorage from 'react-use-localstorage';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/TokensReducer';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
 
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
     
     useEffect(() => {
       if (token == "") {
@@ -36,12 +40,14 @@ function Home() {
                     <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
+                        <Link to="/post" className='text-decorator-none'>
                     <button className="button">
                         <span  className="shadow"></span>
                         <span  className="edge"></span>
                         <span  className="front text"> Ver Postagens
                         </span>
                     </button>
+                    </Link>
                 </div>
                 <div className="img" >
                     <img src="https://i.imgur.com/GxMP4HH.png" alt="" width="500px" height="500px" />

@@ -4,14 +4,18 @@ import { Box, Card, CardActions, CardContent, Button, Typography } from '@mui/ma
 import './ListaPostagem.css';
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Service'
-import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/TokensReducer';
+
 
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
-  const [token, setToken] = useLocalStorage('token');
   let navigate = useNavigate();
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+      (state) => state.tokens
+  );
 
   useEffect(() => {
     if (token == "") {
@@ -39,9 +43,9 @@ function ListaPostagem() {
     <>
       {
         posts.map(post => (
-          <Box m={2} >
-            <Card variant="outlined">
-              <CardContent>
+          <Box m={2}  >
+            <Card variant="outlined" className="">
+              <CardContent className="card2">
                 <Typography color="textSecondary" gutterBottom>
                   Postagens
                 </Typography>
@@ -83,3 +87,4 @@ function ListaPostagem() {
 }
 
 export default ListaPostagem;
+

@@ -5,10 +5,17 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Typography,  Grid } from '@material-ui/core';
 import "../footer/Footer.css"
+import { useSelector } from "react-redux";
+import { TokenState } from "../../../store/tokens/TokensReducer";
 function Footer(){
-    return(
-        <>
-        <div className="bg-footer">
+
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+    var footerComponent
+
+    if(token !== ""){
+        footerComponent = <div className="bg-footer">
         <Grid  className="containerFooter" container direction="row" >
                 <Grid alignItems="center" item xs={12}>
                     <div className="boxFooter" >
@@ -40,6 +47,12 @@ function Footer(){
                 </Grid>
             </Grid>
             </div>
+    }
+
+    
+    return(
+        <>
+        {footerComponent}
         </>
     )
 }

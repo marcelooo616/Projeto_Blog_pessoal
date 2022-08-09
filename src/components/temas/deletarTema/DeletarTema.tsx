@@ -7,13 +7,18 @@ import useLocalStorage from 'react-use-localstorage';
 import Tema from '../../../models/Tema';
 import { buscaId, deleteId } from '../../../services/Service';
 import { Navigation } from '@mui/icons-material';
+import { addToken } from '../../../store/tokens/Actions';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/TokensReducer';
 
 
 function DeletarTema() {
   
   let navigate = useNavigate();
     const { id } = useParams<{id: string}>();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+      (state) => state.tokens
+  );
     const [tema, setTema] = useState<Tema>()
 
     useEffect(() => {

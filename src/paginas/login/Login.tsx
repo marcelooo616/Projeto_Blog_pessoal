@@ -3,15 +3,17 @@ import { Grid, TextField, Button } from '@material-ui/core';
 import { Box } from "@mui/material";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import "../login/Login.css";
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/Actions';
 function Login() {
 
 
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+    const [token, setToken] = useState ('');
 
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
@@ -32,6 +34,7 @@ function Login() {
 
     useEffect(()=>{
         if(token != ""){
+            dispatch( addToken(token))
             navigate('/home')
         }
     },[token])
@@ -97,8 +100,8 @@ function Login() {
 
                 </Grid>
 
-                <Grid xs={6}>
-                    <img src='https://i.imgur.com/qtd3a9w.png' width="500px" height="450px" />
+                <Grid xs={6} className="secao-principal-imagem">
+                    <img src='https://i.imgur.com/qtd3a9w.png' width="500px" height="450px" className='principal-imagem-item'/>
                 </Grid>
             </Grid>
         </>

@@ -1,3 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+
 .text-decorator-none{
     text-decoration: none;
+}
+
+.containerTema{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    
+   
+}
+.card {
+    background-color:  #dcdcdf;
+    --primary-clr: #000000;
+    --dot-clr: #BBC0FF;
+    --play: hsl(190, 3%, 44%);
+    width: 300px;
+    height: 170px;
+    border-radius: 10px;
+   }
+   
+   .card {
+    font-family: "Arial";
+    color: #fff;
+    display: grid;
+    cursor: pointer;
+    grid-template-rows: 50px 1fr;
+   }
+   
+   .card:hover .img-section {
+    transform: translateY(1em);
+    
+   }
+   
+   .card-desc {
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    top: -10px;
+    display: grid;
+    gap: 10px;
+    background: var(--primary-clr);
+   }
+   
+   .card-time {
+    font-size: 1.7em;
+    font-weight: 500;
+    font-family: 'Montserrat Alternates', sans-serif;
+   }
+   
+   .img-section {
+    transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: hsl(180, 0%, 46%);
+   
+
+    
+   }
+   
+  
+   
+   .card-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+   }
+   
+   .card-title {
+    flex: 1;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    
+   }
+   
+   .card-menu {
+    display: flex;
+    gap: 4px;
+    margin-inline: auto;
+   }
+   
+   .card svg {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+   }
+   
+   .card .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--dot-clr);
+   }
+   
+   .card .recent {
+    line-height: 0;
+    font-size: 0.8em;
+   }
+
+   body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(10, 10, 10) 3%, rgb(96, 96, 97) 38%, rgb(219, 219, 219) 68%, rgb(0, 0, 0) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
 }
