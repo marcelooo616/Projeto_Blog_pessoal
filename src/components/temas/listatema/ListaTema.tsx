@@ -9,6 +9,7 @@ import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/TokensReducer';
 import { addToken } from '../../../store/tokens/Actions';
+import { toast } from 'react-toastify';
 
 function ListaTema() {
 
@@ -20,7 +21,16 @@ function ListaTema() {
 
   useEffect(() => {
     if (token == '') {
-      alert("Você precisa estar logado")
+      toast.error('Você precisa estar logado!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+
+    })
       navigate("/login")
     }
   }, [token])

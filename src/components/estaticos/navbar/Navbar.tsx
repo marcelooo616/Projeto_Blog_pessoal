@@ -7,6 +7,7 @@ import useLocalStorage from 'react-use-localstorage';
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/TokensReducer';
 import { addToken } from '../../../store/tokens/Actions';
+import { toast } from 'react-toastify';
 
 function Navbar() {
 
@@ -19,7 +20,16 @@ function Navbar() {
 
     function goLogout() {
         dispatch(addToken(''));
-        alert("Usuário deslogado")
+        toast.info('Usuario deslogado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+
+        })
         navigate('/login')
     }
 
@@ -75,34 +85,34 @@ function Navbar() {
             </Toolbar>
         </AppBar>
 
-    }else{
+    } else {
 
-        navbarComponentDeslogado =  <AppBar position="static">
-        <Toolbar className='headerLogin' variant="dense">
-            <div className="containerBlogLogin">
-                <div className="Box" style={{ cursor: "pointer" }}>
-                    <h2 className='tela'>
-                        Blog Pessoal
-                    </h2>
+        navbarComponentDeslogado = <AppBar position="static">
+            <Toolbar className='headerLogin' variant="dense">
+                <div className="containerBlogLogin">
+                    <div className="Box" style={{ cursor: "pointer" }}>
+                        <h2 className='tela'>
+                            Blog Pessoal
+                        </h2>
+
+                    </div>
 
                 </div>
 
-            </div>
+                <div className="containerNavLogin">
+                    <div className="Box" style={{ cursor: "pointer" }}>
+                        <h2>
+                            <Link to='/cadastrousuario'>cadastre-se</Link>
+                        </h2>
+                    </div>
 
-            <div className="containerNavLogin"> 
-                <div className="Box" style={{ cursor: "pointer" }}>
-                    <h2>
-                        <Link to='/cadastrousuario'>cadastre-se</Link>
-                    </h2>
+
+
+
                 </div>
 
-                
-
-
-            </div>
-
-        </Toolbar>
-    </AppBar>
+            </Toolbar>
+        </AppBar>
 
 
 
@@ -110,8 +120,8 @@ function Navbar() {
 
     return (
         <>
-             {navbarComponentLogado}
-             {navbarComponentDeslogado}
+            {navbarComponentLogado}
+            {navbarComponentDeslogado}
         </>
     );
 }
