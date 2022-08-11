@@ -91,11 +91,10 @@ function Login() {
                                 </div>
                                 <div className='paddingX' >
 
-                                    <button type = "submit">
-                                        <span className="shadow"></span>
-                                        <span className="edge"></span>
-                                        <span className="front text"> Logar
-                                        </span>
+                                    <button className='button-logar' >
+                                        
+                                         Logar
+                                        
                                     </button>
 
 
