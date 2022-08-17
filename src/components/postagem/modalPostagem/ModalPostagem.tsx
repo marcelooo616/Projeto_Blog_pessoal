@@ -70,8 +70,7 @@ function ModalPostagem() {
         </div>
         <span>Post</span>
       </button>
-
-      
+     
       <Modal
         open={open}
         onClose={handleClose}
